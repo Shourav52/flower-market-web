@@ -290,6 +290,38 @@
   font-size: 1rem;
   font-weight: 600;
 }
+.footer-sector{
+  display: flex;
+  justify-content:space-around;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.footer-link-items{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.footer-link-items > li >a{
+    text-decoration: none;
+  list-style: none;
+  color: rgba(107, 114, 128, 1);
+}
+.footer-description{
+  width: 359px;
+}
+.img-f{
+  padding-left: 30px;
+  
+} 
+.footer-icons{
+  padding-left: 0px;
+}
+
+
 
 @media screen and (max-width: 576px) {
    .nav-item,.trusted-badge{
@@ -370,5 +402,14 @@
 }
 .email-bar{
   width: 218px;
+}
+.footer-link-items{
+   grid-template-columns: 1fr;
+}
+.footer-sector{
+  flex-direction: column;
+}
+.footer-icons{
+   padding-top: 10px;
 }
 }
